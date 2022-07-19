@@ -18,6 +18,7 @@ struct node *next;
 };
 
 node * mergetwosortedll(node *head1,node*head2){
+
     node *res,*current;
     node *temp1=head1,*temp2=head2;
     if(head1->data<head2->data){
@@ -30,6 +31,7 @@ node * mergetwosortedll(node *head1,node*head2){
    }
    while(temp1 and temp2){
        if(temp1->data<temp2->data){
+       
            node *helper=temp1;
            temp1=temp1->next;
            helper->next=NULL;
