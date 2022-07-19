@@ -23,6 +23,7 @@ node * mergetwosortedll(node *head1,node*head2){
     node *temp1=head1,*temp2=head2;
     if(head1->data<head2->data){
         res=head1;
+        
         current=head1;
     }
     else{
@@ -35,6 +36,7 @@ node * mergetwosortedll(node *head1,node*head2){
            node *helper=temp1;
            temp1=temp1->next;
            helper->next=NULL;
+           
            current->next=helper;
            current=current->next;
            }
